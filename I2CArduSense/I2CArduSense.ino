@@ -3,7 +3,7 @@
 #define SERIAL_DEBUG    // Enable debugging output to serial
 
 #define I2CArduSense_ADDR                 0x7A        // I2C Slave Address for I2CArduSense
-#define I2CArduSense_SIGNATURE            0x4154      // AT for Andre Thomas in HEX :)
+#define I2CArduSense_SIGNATURE            0x4153      // AS for ArduSense in HEX :)
 
 uint16_t  I2CArduSense_Interrupt_Reg = 0x00;
 
