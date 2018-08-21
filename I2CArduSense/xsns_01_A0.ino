@@ -9,6 +9,10 @@
 
 #define XSNS_01 1
 
+void A0_MakeJSON(void) {
+  sprintf(jsonresult,"{\"A0\":%i}",analogRead(A0));
+}
+
 /***************************************\
  Interface
 \***************************************/
@@ -25,9 +29,12 @@ boolean Xsns01(byte function) {
     case FUNC_EVERY_SECOND:
       break;
     case FUNC_JSON:
+      A0_MakeJSON();
+      result=true;
       break;
     default:
       break;
   }
+  return result;
 }
 

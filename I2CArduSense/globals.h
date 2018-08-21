@@ -11,6 +11,8 @@
 
 uint16_t  I2CArduSense_Interrupt_Reg = 0x0000;
 
+char jsonresult[1000];
+
 unsigned long mclock;
 unsigned long m50;
 unsigned long m100;

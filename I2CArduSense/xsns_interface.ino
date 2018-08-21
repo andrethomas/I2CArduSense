@@ -20,9 +20,8 @@
   
  */
 
+boolean (* const xsns_func_ptr[])(byte) PROGMEM = {  // Sensor Function Pointers for simple implementation of sensors
 
-
- boolean (* const xsns_func_ptr[])(byte) PROGMEM = {  // Sensor Function Pointers for simple implementation of sensors
 #ifdef XSNS_01
   &Xsns01,
 #endif
@@ -112,5 +111,4 @@ boolean XsnsNextCall(byte Function)
   if (xsns_index == xsns_present) xsns_index = 0;
   return xsns_func_ptr[xsns_index](Function);
 }
-
 
