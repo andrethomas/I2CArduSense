@@ -1,4 +1,6 @@
-EXPERIMENTAL - Still under development and not ready for testing
+***EXPERIMENTAL***
+
+This project is still under development and not ready for testing
 
 Basic idea is to create generic code for a arduino board to act as a I2C slave
 which may be interacted with from the Sonoff-Tasmota firmware by Theo Arendst
